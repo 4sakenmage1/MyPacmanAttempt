@@ -86,7 +86,6 @@ class PacManPortalGame:
     def next_level(self):
         """Increment the game level and then continue the game"""
         pygame.time.set_timer(PacManPortalGame.LEVEL_TRANSITION_EVENT, 0)  # reset timer
-        self.player.clear_portals()
         self.score_keeper.increment_level()
         self.rebuild_maze()
 
